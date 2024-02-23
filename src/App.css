@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  width: 100%;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.TopNav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+  margin: 5px;
+}
+
+.NavBar{
+  background-color: rgb(153, 37, 37);
+  height: 40px;
+  font-size: larger;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 20px;
+}
+
+.NavBar a{
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.TextArea{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 80px;
+  font-size: larger;
+  font-weight: bold;
+  /* text-align: left; */
+  /* line-height: 30px; */
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MainContainer{
+  width: 95vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+  left: 40px;
+  margin-bottom: 20px;
+  gap: 20px;
+
+}
+
+.innerContainer img{
+  width: 20vw;
+  height: 40vh;
+  border-radius: 10px;
+}
+
+.innerContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 20vw;
+  border: 3px solid aliceblue;
+  border-radius: 10px;
+}
+
+.innerContainer:hover{
+  box-shadow: 0px 0px 3px 5px grey;
+  transform:scaleX()(2px);
+}
+
+.Footer{
+  background-color: black;
+  height: 40px;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.Footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.FooterContainer{
+  display: flex;
+  justify-content: center;
+  height: 130px;
+  background-color: rgb(230, 230, 230);
+  gap: 20px;
 }
