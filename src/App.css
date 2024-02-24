@@ -24,9 +24,14 @@ body{
   width: 98vw;
 }
 
-.logo{
-  width: 25%;
-  height: 10vh;
+/* .logo{
+  width: 30vw;
+  height: 60px;
+} */
+
+.innerLogo{
+  display: flex;
+  gap: 20px;
 }
 
 .NavBar{
@@ -157,6 +162,9 @@ body{
   font-size: larger;
   height: 40px;
   background-color:thistle;
+  position: absolute;
+  left: 90%;
+  top: 40px;
 }
 
 .Login_Btn{
@@ -279,6 +287,10 @@ body{
     height: 50px;
   }
 
+  .innerLogo{
+    flex-direction: column;
+  }
+
   .fontFooter{
     font-size:xx-small;
   }
@@ -346,7 +358,9 @@ body{
     gap: 10px;
   }
   
-  
+  .innerLogo{
+    flex-direction: column;
+  }
 
  .FooterContainer{
   width: 99%;

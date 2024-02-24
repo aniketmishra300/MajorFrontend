@@ -46,7 +46,7 @@ export const NavBar = () => {
     return (
         <div>
             <span className='TopNav'>
-                <div>
+                <div className='innerLogo'>
                 <img className='logo' src='https://www.theindiatourism.com/images/logo.webp' alt='not found' />
                 <img className='logo' src='https://www.theindiatourism.com/images/atithi-devo-bhava.webp' alt='not found' />
                 </div>
