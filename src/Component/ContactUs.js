@@ -1,8 +1,11 @@
 import React from 'react'
+import Footer from '../Header/Footer'
 
 const ContactUs = () => {
   return (
-    <div>
+    <>
+   
+    <div className='contact'>
       <h1>Contact Us</h1>
       <hr/>
       <p>Thank you for showing your interest in The India Tourism Tour & Travel services. Please provide the information about your tour requirements in order to help us to serve you better.
@@ -14,8 +17,11 @@ const ContactUs = () => {
           +91 9549279999
         </span>
       </div>
+      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlad1QJcWv3YUc4farcg-Z459IumH5CSkj12nuvS8sFA&s' alt='not found'/>
     </div>
-
+    <br/>
+    <Footer/>
+    </>
   )
 }
 

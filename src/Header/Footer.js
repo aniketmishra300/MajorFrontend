@@ -20,7 +20,7 @@ const Footer = () => {
                     <h4> 📩: info@theindiatourism.com </h4>
                     {/* <img src='https://1000logos.net/wp-content/uploads/2021/04/Paypal-logo.png' alt='not found'/> */}
                 </div>
-                <div>
+                <div className='footerLogo'>
                     <img src='https://www.theindiatourism.com/images/India-tour-footer.jpg' alt='not found'/>
                 </div>
                     {/* <div>

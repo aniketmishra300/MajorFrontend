@@ -1,13 +1,13 @@
+import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import Slider from './Slider'
-import axios from "axios"
+import { NavLink, useParams } from 'react-router-dom'
 import "../App.css"
 import Footer from '../Header/Footer'
-import { NavLink } from 'react-router-dom'
 
-const Home = () => {
+const DynamicPage = () => {
 
     const [data, setData] = useState([])
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -24,13 +24,21 @@ const Home = () => {
         fetchData()
     }, [])
 
+    const paramId = useParams().id
+    console.log(paramId)
     return (
         <div>
-            <Slider />
-            {data.filter(item => item.category === "home").map((item) => {
+            {data.filter(item => item.id === parseInt(paramId)).map((item) => {
                 return (
-                    <div className='TextArea'>
-                        <p>{item.maintext}</p>
+                    <div className='DynamicContainer'>
+                        <div>
+                            <img className='DynamicImg' src={item.image} alt='not found' />
+                            <h1>{item.place}</h1>
+
+                        </div>
+                        <div className='DynamicText'>
+                            <h3>{item.about}</h3>
+                        </div>
                     </div>
                 )
             })}
@@ -52,4 +60,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default DynamicPage

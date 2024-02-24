@@ -3,11 +3,15 @@ import Slider from './Slider'
 import axios from "axios"
 import "../App.css"
 import Footer from '../Header/Footer'
+import { useNavigate } from 'react-router-dom'
 
 const TourOffers = () => {
   const [data,setData] = useState([])
+  const Navigate = useNavigate()
 
   useEffect(()=>{
+    const token = localStorage.getItem("token")
+    if(token){
       const fetchData = async () => {
           try {
             const url= "https://majorbackend-mfy9.onrender.com/findAllData"
@@ -20,7 +24,12 @@ const TourOffers = () => {
           }
       }
      fetchData()
-  },[])
+    }
+    else{
+        // alert("login First!")
+        Navigate("/login")
+    }
+  })
 
 return (
   <div>

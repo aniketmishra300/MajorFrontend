@@ -12,11 +12,18 @@ body{
   display: flex;
   justify-content: space-evenly;
   margin: 5px;
+  width: 98vw;
+}
+
+.logo{
+  width: 25%;
+  height: 10vh;
 }
 
 .NavBar{
   background-color: rgb(153, 37, 37);
-  height: 40px;
+  width: 100%;
+  height: 5vh;
   font-size: larger;
   display: flex;
   justify-content: center;
@@ -40,6 +47,8 @@ body{
   /* text-align: left; */
   /* line-height: 30px; */
   margin: 10px;
+  text-align: justify;
+
 }
 
 .MainContainer{
@@ -70,6 +79,11 @@ body{
   border-radius: 10px;
 }
 
+.innerContainer a{
+  text-decoration: none;
+  color: black;
+}
+
 .innerContainer:hover{
   box-shadow: 0px 0px 3px 5px grey;
   transform:scaleX()(2px);
@@ -97,4 +111,197 @@ body{
   height: 130px;
   background-color: rgb(230, 230, 230);
   gap: 20px;
+}
+
+.footerLogo img{
+  width:70vw;
+}
+
+.DynamicContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.DynamicImg{
+  width: 98vw;
+  height: 60vh;
+}
+
+.DynamicText{
+  width: 90vw;
+  text-align: left;
+  margin: 10px;
+}
+
+
+.Login{
+  width: 100px;
+  font-size: larger;
+  height: 40px;
+  background-color:thistle;
+}
+
+.Login_Btn{
+  padding: 10px;
+  background-color: grey;
+  border-radius: 5px;
+}
+
+
+.Login_Form{
+  position: relative;
+  top: 100px;
+  left: 20vw;
+  width: 60vw;
+  height: 60vh;
+  /* border: 5px solid red; */
+  border-radius: 15px;
+  box-shadow: black 0px 0px 0px 10px;
+  background-image: url('https://i.pinimg.com/564x/6c/7a/83/6c7a83935064c12dfe1e0dc4293db7b2.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+@media screen and (min-width:360px) and (max-width:480px) {
+  
+  .NavBar{
+   text-align: center;
+   font-size: small;
+    gap: 1px;
+  }
+
+  .TopNav{
+    display: flex;
+    justify-content:space-around;
+    margin: 5px;
+    width: 98vw;
+    gap: 2px;
+  }
+  
+
+  .TextArea{
+    position: relative;
+    left: 0px;
+    font-size:small;
+    font-weight: bold;
+  }
+
+  .MainContainer{
+  
+    left: 5px;
+    gap: 3px;
+  
+  }
+
+
+  .innerContainer img{
+    width: 40vw;
+    height: 100px;  
+  }
+
+  .innerContainer a{
+    font-size: small;
+  }
+  
+  .innerContainer{
+   
+    width: 40vw;
+    
+  }
+
+
+  .Footer{
+    width: 100vw;
+    font-size: small;
+   text-align: center;
+    gap: 0px;
+  }
+  
+ 
+  .FooterContainer{
+    height: 100px;
+    gap: 2px;
+  }
+  
+  .footerLogo img{
+    width:100%;
+    height: 60px;
+  }
+
+  .headerEmail{
+    font-size: 70%;
+  }
+
+  .logo{
+    height: 50px;
+  }
+
+}
+
+
+@media screen and (min-width:500px) and (max-width:1200px) {
+  
+  .NavBar{
+   text-align: center;
+   gap: 10px;
+  }
+
+  .TopNav{
+    width: 99%;
+  }
+
+  .TextArea{
+    left: 20px;
+    font-size:large;
+  }
+
+  .MainContainer{
+    left: 5px;
+    gap: 3px;
+  }
+
+
+  .innerContainer img{
+    width: 40vw;
+    height: 200px;  
+  }
+
+  .innerContainer a{
+    font-size: large;
+  }
+  
+  .innerContainer{
+    width: 40vw;
+  }
+
+
+  .Footer{
+    width: 100%;
+    font-size: large;
+    gap: 10px;
+  }
+  
+ .FooterContainer{
+  width: 100%;
+ }
+  
+
 }
