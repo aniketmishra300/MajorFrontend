@@ -191,9 +191,9 @@ body{
   .TopNav{
     display: flex;
     justify-content:space-around;
-    margin: 5px;
+    margin: 2px;
     width: 98vw;
-    gap: 2px;
+    gap: 0px;
   }
   
 
