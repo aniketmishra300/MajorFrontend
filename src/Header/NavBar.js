@@ -46,8 +46,10 @@ export const NavBar = () => {
     return (
         <div>
             <span className='TopNav'>
+                <div>
                 <img className='logo' src='https://www.theindiatourism.com/images/logo.webp' alt='not found' />
                 <img className='logo' src='https://www.theindiatourism.com/images/atithi-devo-bhava.webp' alt='not found' />
+                </div>
                 <div>
                     <h3 className='headerEmail'>Email : info@theindiatourism.com</h3>
                     <span>
@@ -55,11 +57,11 @@ export const NavBar = () => {
                         +91 9549279999
                     </span>
                 </div>
+            </span>
                 {count ? (
             <button className='Login' onClick={handleLogout}>Logout</button>) : (
             <button className='Login' onClick={handleLogin}>Login</button>)
           }
-            </span>
 
 
             <div className='NavBar'>

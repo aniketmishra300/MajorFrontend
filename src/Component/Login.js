@@ -30,7 +30,7 @@ const Login = () => {
     return (
         <div className='Login_Form'>
             <h1>Login</h1>
-                <span className="Email_input">Email :
+                <span className="Email_input">Email Id :
                     <input type='text' placeholder='Enter Email' value={email} onChange={(e) => setEmail(e.target.value)} />
                 </span>
             

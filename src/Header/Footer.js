@@ -15,7 +15,7 @@ const Footer = () => {
             </div>
 
             <div className='FooterContainer'>
-                <div>
+                <div className='fontFooter'>
                     <h2>The India Tourism</h2>
                     <h4> 📩: info@theindiatourism.com </h4>
                     {/* <img src='https://1000logos.net/wp-content/uploads/2021/04/Paypal-logo.png' alt='not found'/> */}
@@ -23,9 +23,7 @@ const Footer = () => {
                 <div className='footerLogo'>
                     <img src='https://www.theindiatourism.com/images/India-tour-footer.jpg' alt='not found'/>
                 </div>
-                    {/* <div>
-                        <h4> The India Tourism</h4>
-                    </div> */}
+                   
 
             </div>
     </div>

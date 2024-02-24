@@ -6,6 +6,15 @@
 body{
   width: 100%;
   box-sizing: border-box;
+  font-family:'MontserratAlternates';
+}
+
+@font-face {
+  font-family:'MontserratAlternates';
+  font-style: normal;
+  font-weight: 400;
+  src: local('MontserratAlternates-Regular'), url(https://fonts.gstatic.com/s/montserratalternates/v4/z2n1Sjxk9souK3HCtdHukpy2IC1KoJIC5P3EDKbgI_s.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 .TopNav{
@@ -29,12 +38,18 @@ body{
   justify-content: center;
   align-items: center;
   gap: 20px;
+
 }
 
 .NavBar a{
   text-decoration: none;
   color: white;
 }
+
+/* .NavBar a:hover{
+  background-color: rgb(128, 105, 0);
+  height: 30px;
+} */
 
 .TextArea{
   width: 90%;
@@ -167,6 +182,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   gap: 20px;
 }
 
@@ -191,6 +207,7 @@ body{
   .TopNav{
     display: flex;
     justify-content:space-around;
+    flex-direction: column-reverse;
     margin: 2px;
     width: 98vw;
     gap: 0px;
@@ -199,7 +216,7 @@ body{
 
   .TextArea{
     position: relative;
-    left: 0px;
+    left: 10px;
     font-size:small;
     font-weight: bold;
   }
@@ -211,10 +228,19 @@ body{
   
   }
 
+  .Login{
+    position: absolute;
+    top: 5px;
+    left: 70%;
+  }
+
+  .DynamicImg{
+    height: 300px;
+  }
 
   .innerContainer img{
-    width: 40vw;
-    height: 100px;  
+    width: 90vw;
+    height: 200px;  
   }
 
   .innerContainer a{
@@ -222,9 +248,7 @@ body{
   }
   
   .innerContainer{
-   
-    width: 40vw;
-    
+    width: 90vw;
   }
 
 
@@ -251,7 +275,12 @@ body{
   }
 
   .logo{
+    width: 100%;
     height: 50px;
+  }
+
+  .fontFooter{
+    font-size:xx-small;
   }
 
 }
@@ -260,12 +289,15 @@ body{
 @media screen and (min-width:500px) and (max-width:1200px) {
   
   .NavBar{
+    /* width: 99%; */
    text-align: center;
    gap: 10px;
   }
 
   .TopNav{
-    width: 99%;
+    width: 98%;
+    flex-direction: column-reverse;
+
   }
 
   .TextArea{
@@ -276,12 +308,27 @@ body{
   .MainContainer{
     left: 5px;
     gap: 3px;
+
+  }
+  .logo{
+    width: 99%;
+    height: 80px;
   }
 
 
+  /* .DynamicImg{
+    width: 99%;
+  } */
+
+  .Login{
+    position: absolute;
+    top: 5px;
+    left: 70%;
+  }
+
   .innerContainer img{
-    width: 40vw;
-    height: 200px;  
+    width: 90vw;
+    height: 350px;  
   }
 
   .innerContainer a{
@@ -289,7 +336,7 @@ body{
   }
   
   .innerContainer{
-    width: 40vw;
+    width: 95vw;
   }
 
 
@@ -299,8 +346,10 @@ body{
     gap: 10px;
   }
   
+  
+
  .FooterContainer{
-  width: 100%;
+  width: 99%;
  }
   
 

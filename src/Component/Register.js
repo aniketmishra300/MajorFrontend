@@ -35,10 +35,10 @@ const Register = () => {
     return (
         <div className='Login_Form'>
             <h1>Register</h1>
-            <span className="Email_input">Name :
+            <span className="Email_input">Full Name :
                 <input type='text' placeholder='Enter Email' value={name} onChange={(e) => setName(e.target.value)} />
             </span>
-            <span className="Email_input">Email :
+            <span className="Email_input">Email Id :
                 <input type='text' placeholder='Enter Email' value={email} onChange={(e) => setEmail(e.target.value)} />
             </span>
             <span>Password :
