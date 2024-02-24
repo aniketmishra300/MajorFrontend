@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
+import Footer from '../Header/Footer'
 
 
 const Register = () => {
@@ -33,6 +34,8 @@ const Register = () => {
     }
 
     return (
+        <>
+      
         <div className='Login_Form'>
             <h1>Register</h1>
             <span className="Email_input">Full Name :
@@ -47,6 +50,8 @@ const Register = () => {
             <button className='Login_Btn' type='submit' onClick={handleRegister}>Register</button>
             <NavLink to='/login'><h3>Already signup? Clik here to Login</h3></NavLink>
         </div>
+        <Footer/>
+        </>
     )
 }
 

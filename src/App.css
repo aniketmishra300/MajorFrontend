@@ -176,10 +176,10 @@ body{
 
 .Login_Form{
   position: relative;
-  top: 100px;
+  top: 0px;
   left: 20vw;
   width: 60vw;
-  height: 60vh;
+  height: 55vh;
   /* border: 5px solid red; */
   border-radius: 15px;
   box-shadow: black 0px 0px 0px 10px;
@@ -192,6 +192,7 @@ body{
   flex-direction: column;
   text-align: center;
   gap: 20px;
+  margin: 20px;
 }
 
 .contact{

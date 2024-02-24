@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "../App.css";
 import { NavLink, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import Footer from '../Header/Footer';
 
 
 
@@ -28,6 +29,8 @@ const Login = () => {
     }
 
     return (
+        <>
+        
         <div className='Login_Form'>
             <h1>Login</h1>
                 <span className="Email_input">Email Id :
@@ -41,6 +44,8 @@ const Login = () => {
             <button className='Login_Btn' type='submit' onClick={handleLogin}>Login</button>
             <NavLink to='/register'><h3>New to Ecommerce? Register First</h3></NavLink>
         </div>
+        <Footer/>
+        </>
     )
 }
 
