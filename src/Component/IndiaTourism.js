@@ -28,7 +28,7 @@ const IndiaTourism = () => {
             // alert("login First!")
             Navigate("/login")
         }
-    },[])
+    },[Navigate])
 
     return (
         <div>
