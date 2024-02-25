@@ -22,9 +22,7 @@ export const NavBar = () => {
 
     const Auth = async ()=>{
         const token = localStorage.getItem("token")
-           if(token){
-             alert("Login Successfully")
-           }else{
+           if(!token){
              alert("login First!")
              Navigate('/login')
            }

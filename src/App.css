@@ -62,8 +62,8 @@ body{
   justify-content: center;
   position: relative;
   left: 80px;
-  font-size: larger;
-  font-weight: bold;
+  font-size: large;
+  font-weight:lighter;
   /* text-align: left; */
   /* line-height: 30px; */
   margin: 10px;
@@ -154,6 +154,15 @@ body{
   width: 90vw;
   text-align: left;
   margin: 10px;
+}
+
+.DynamicText h3{
+  font-size: large;
+  font-weight:lighter;
+}
+
+.Login_Form{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 

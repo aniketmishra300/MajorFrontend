@@ -18,7 +18,6 @@ const Login = () => {
         axios.post(url, { email, password })
             .then((res) => {
                 console.log(res.data)
-
                 if (res.data.msg === "User logged in successfully") {
                     alert(res.data.msg, "login success")
                     localStorage.setItem("token", res.data.token)
@@ -42,7 +41,7 @@ const Login = () => {
                 </span>
          
             <button className='Login_Btn' type='submit' onClick={handleLogin}>Login</button>
-            <NavLink to='/register'><h3>New to Ecommerce? Register First</h3></NavLink>
+            <NavLink to='/register'><h3>New to IndiaTourism? Register First</h3></NavLink>
         </div>
         <Footer/>
         </>
