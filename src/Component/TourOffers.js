@@ -29,7 +29,7 @@ const TourOffers = () => {
         // alert("login First!")
         Navigate("/login")
     }
-  })
+  },[])
 
 return (
   <div>
